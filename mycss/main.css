@@ -1,0 +1,1072 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logo {
+    background-color: #000; /* set the background color to black */
+    padding: 10px; /* add some padding around the logo */
+    display: inline-block; /* make the logo container an inline-block element */
+   
+  }
+  
+  
+  
+  .logo {
+    text-align: center; /* center the logo */
+  }
+  
+  .logo img {
+    max-width: 100%; /* ensure the logo doesn't exceed its container width */
+    height: auto; /* maintain the aspect ratio of the logo */
+    display: block; /* remove any inline whitespace around the logo */
+  }
+  
+  body {
+    font-family: 'Karla', sans-serif;
+    background-color: #f3f0e9;
+    color: #000000;
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  button:hover {
+    background-color: #d69e3d;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  }
+  /* Navigation */
+  
+  nav {
+    background-color: #000000;
+    padding: 1em;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  
+  /* Typography */
+  
+  h1,
+  h2,
+  h3 {
+    font-family: 'Lato', sans-serif;
+  
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  
+  }
+  
+  h1 {
+    font-size: 2.027rem;
+    /* 32.44px */
+  }
+  
+  h2 {
+    font-size: 1.802rem;
+    /* 28.83px */
+  }
+  
+  h3 {
+    font-size: 1.424rem;
+    /* 22.78px */
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  /* Buttons */
+  
+  button {
+    background-color: #d69e3d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+  }
+  
+  button:hover {
+    background-color: #966f2c;
+  }
+  
+  nav {
+    background-color: #000;
+    font-family: Lato, sans-serif;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  nav a:hover {
+    color: #ccc;
+  }
+  
+  /* Style home section */
+  .home {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .home img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    /* darken the image */
+    z-index: -1;
+    /* move image to the back */
+  }
+  
+  .home h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  
+  .button-1 {
+    text-align: center;
+    /* center the button */
+    text-transform: uppercase;
+  }
+  
+  .button-1 button {
+    background-color: #fff;
+    /* white button */
+    color: #333;
+    /* dark gray text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .button-1 button:hover {
+    background-color: #f7f7f7;
+    /* light gray on hover */
+    text-transform: uppercase;
+  }
+  
+  /* Media query for mobile */
+  @media (max-width: 768px) {
+    .logo img {
+      max-width: 80%;
+      height: auto;
+      background-color: #000; /* set the background color to black */
+      padding: 10px; /* add some padding around the logo */
+      display: inline-block; /* make the logo container an inline-block element */
+    }
+    
+    .home {
+      height: 50vh;
+    }
+  
+    .home h1 {
+      font-size: 24px;
+    }
+  
+    .coffee-header {
+      color: orange;
+      text-align: left;
+      text-transform: uppercase;
+    }
+  
+    .coffee-subheader {
+      text-transform: uppercase;
+      text-align: left;
+    }
+  
+    .home p {
+      font-size: 14px;
+    }
+  
+    .button-1 button {
+      padding: 8px 16px;
+    }
+  }
+  
+  
+  
+  /* Mobile layout */
+  @media only screen and (max-width: 768px) {
+    .latte-image {
+      width: 100%;
+      /* make latte image full-width on mobile */
+      height: auto;
+    }
+  
+    .image-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+  
+    .image {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: orange;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  p,
+  span {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .icon1 {
+    width: 40%;
+    padding: 2rem;
+  }
+  
+  .offer-item,
+  .offer-item-2,
+  .offer-item-3 {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .icon2 {
+    width: 40%;
+    padding: 2rem;
+  }
+  
+  
+  .icon3 {
+    width: 40%;
+    padding: 2rem;
+  }
+  
+  .image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .step-icon {
+    width: 30%;
+    height: 30%px;
+    margin: 10px auto;
+    /* add margin to center the icon */
+    display: block;
+    /* make the icon a block element to center it */
+  }
+  
+  .step-text {
+    color: #000;
+  }
+  
+  .hero {
+    position: relative;
+    height: 100vh;
+    /* adjust the height to your liking */
+    color: #fff;
+    /* white text color */
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    /* darken the image */
+  }
+  
+  .content-1,
+  .content-2 {
+    position: relative;
+    z-index: 1;
+    /* bring the content to the front */
+    text-align: center;
+    padding: 20px;
+  
+  
+  }
+  
+  .content button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+  
+  }
+  
+  button:hover {
+    background-color: #ccc;
+  }
+  
+  .about-us {
+    max-width: 400px;
+    /* adjust the max-width to fit mobile size */
+    margin: 20px auto;
+    /* add some margin to center the container */
+  }
+  
+  .about-us-image {
+    width: 100%;
+    height: 100%;
+    /* adjust the height to fit mobile size */
+    object-fit: cover;
+  
+  }
+  
+  .about-us-content {
+    padding: 20px;
+  }
+  
+  .about-us-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: orange;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  
+  .about-us-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .about-us-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .about-us-content button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* add some shadow */
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #ccc;
+    text-align: left;
+  }
+  
+  
+  /* Make all images fit to mobile size */
+  .test img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(0.5);
+    /* darken the image */
+  }
+  
+  /* Make background black */
+  .test {
+    background-color: #000;
+  }
+  
+  .test h2 {
+    color: #fff;
+    text-align: left;
+  }
+  
+  /* Style h3 and p */
+  .test p {
+    position: relative;
+    z-index: 1;
+    color: #ccc;
+    text-align: left;
+    margin-bottom: 10px;
+    top: 40%;
+  }
+  
+  .test h3 {
+    color: orange;
+    text-align: left;
+  }
+  
+  /* Style images to be behind text */
+  .testimonials img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  
+  }
+  
+  footer {
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Tablet layout */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .latte-image {
+      width: 45%;
+      /* make latte image 50% of the width */
+      height: auto;
+      float: left;
+      /* make it float to the left */
+    }
+  
+    .image-container {
+      width: 49%;
+      /* make image container 50% of the width */
+      float: left;
+      /* make it float to the left */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+  
+    .image {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Tablet layout */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .logo img {
+      max-width: 60%;
+      height: auto;
+      background-color: #000; /* set the background color to black */
+      padding: 10px; /* add some padding around the logo */
+      display: inline-block; /* make the logo container an inline-block element */
+    }
+  
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .step {
+      width: 50%;
+      float: left;
+    }
+  
+    .step-text {
+      width: 100%;
+    }
+  
+    .step-icon {
+      width: 30%;
+      height: 30%;
+      margin: 10px auto;
+      display: block;
+    }
+   
+    .fair-trade {
+      padding: 20px;
+    }
+  
+    .local-baked-goods {
+      padding: 20px;
+      
+    }
+  
+    .made-with-love {
+      padding: 20px;
+      margin: 0 auto;
+  
+    }
+    .offers {
+      flex-wrap: nowrap; /* don't wrap items on tablet */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .offer-item,.offer-item-2,.offer-item-3 {
+      width: 30%; /* adjust the width to fit beside each other on tablet */
+      margin: 10px;
+    }
+  
+    .offer-item img,.offer-item-2 img,.offer-item-3 img {
+      width: 80%; /* make images bigger on tablet */
+      height: auto;
+      margin: 0 auto; }
+    .hero {
+      height: 60vh;
+      /* adjust the height to fit tablet size */
+      position: relative;
+      /* add relative positioning to hero container */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .background-image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(0.5);
+      position: absolute;
+      /* add absolute positioning to image */
+      top: 0;
+      left: 0;
+      z-index: -1;
+      /* send image to back layer */
+    }
+  
+    .content-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+      /* add relative positioning to content wrapper */
+      z-index: 1;
+      /* bring content wrapper to front layer */
+    }
+  
+    .content-1,
+    .content-2 {
+      width: 40%;
+      /* adjust the width to fit beside each other */
+      margin: 20px;
+      text-align: center;
+    }
+  
+    .content-1 h3,
+    .content-2 h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #fff;
+      /* add white text color to contrast with image */
+    }
+  
+    .content-1 h2,
+    .content-2 h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #fff;
+      /* add white text color to contrast with image */
+    }
+  
+    .content-1 button {
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #333;
+      background-color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .content-2 button {
+      padding: 10px 20px;
+      font-size: 18px;
+      color: white; /* change text color to black */
+      background-color: transparent; /* change background color to white */
+      border:#fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    /* Tablet layout */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .hero {
+        height: 70vh;
+        /* adjust the height for tablet size */
+      }
+  
+      .content-wrapper {
+        flex-direction: row;
+        /* change to horizontal layout for tablet */
+      }
+  
+      .content-1,
+      .content-2 {
+        width: 45%;
+        /* adjust the width for tablet size */
+        margin: 15px;
+      }
+  
+      .content-1 h3,
+      .content-2 h3 {
+        font-size: 20px;
+        /* adjust font size for tablet */
+      }
+  
+      .content-1 h2,
+      .content-2 h2 {
+        font-size: 30px;
+        /* adjust font size for tablet */
+      }
+  
+      .content-1 button,
+      .content-2 button {
+        padding: 12px 25px;
+        /* adjust button size for tablet */
+        font-size: 16px;
+        /* adjust font size for tablet */
+      }
+    }
+  
+    .about-us {
+      max-width: 800px;
+      /* adjust the max-width for tablet size */
+      margin: 40px auto;
+      /* add more margin for tablet size */
+      display: flex;
+      /* change to flex layout for tablet */
+      flex-wrap: wrap;
+      /* allow elements to wrap to next line */
+    }
+  
+    .about-us-image {
+      width: 50%;
+      /* adjust the width to fit beside content */
+      height: 550px;
+      /* adjust the height for tablet size */
+      object-fit: cover;
+    }
+  
+    .about-us-content {
+      width: 50%;
+      /* adjust the width to fit beside image */
+      padding: 40px;
+      /* add more padding for tablet size */
+    }
+  
+    .about-us-content h3 {
+      font-size: 24px;
+      /* adjust font size for tablet */
+    }
+  
+    .about-us-content h2 {
+      font-size: 36px;
+      /* adjust font size for tablet */
+    }
+  
+    .about-us-content p {
+      font-size: 18px;
+      /* adjust font size for tablet */
+    }
+  
+    .about-us-content button {
+      padding: 15px 30px;
+      /* adjust button size for tablet */
+      font-size: 18px;
+      /* adjust font size for tablet */
+    }
+  
+    .test {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .testimonial-1,
+  .testimonial-2,
+  .testimonial-3 {
+      width: 25%; /* Adjust the width to fit beside each other */
+      margin: 20px;
+  }
+  
+  .testimonial-1 img,
+  .testimonial-2 img,
+  .testimonial-3 img {
+      max-width: 100%; /* Ensure images don't exceed their container width */
+  }
+  
+  .testimonial-1 p,
+  .testimonial-2 p,
+  .testimonial-3 p {
+      font-size: 18px; /* Adjust font size for desktop */
+      margin-bottom: 15px;
+      top: 15px;
+  }
+  
+  .testimonial-1 h3,
+  .testimonial-2 h3,
+  .testimonial-3 h3 {
+      font-size: 20px; /* Adjust font size for desktop */
+      margin-bottom: 10px;
+  }
+   
+    
+  }
+  
+  
+  /* Desktop layout */
+  @media only screen and (min-width: 1025px) {
+    /* apply same styles as tablet layout */
+    .logo img {
+      max-width: 40%;
+      height: auto;
+      background-color: #000; /* set the background color to black */
+      padding: 10px; /* add some padding around the logo */
+      display: inline-block; /* make the logo container an inline-block element */
+    }
+  
+    .latte-image {
+      width: 45%;
+      height: auto;
+      float: left;
+    }
+  
+    .image-container {
+      width: 49%;
+      float: left;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+  
+    .image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .what-we-offer {
+  
+      margin: 10px; /* Add some spacing */
+    }
+  
+    .offer-item, .offer-item-2, .offer-item-3 {
+      display: inline-block; /* Display them side by side */
+      width: 30%; /* Set the width */
+      margin: 10px; /* Add some spacing */
+  }
+  
+  .offer-item img, .offer-item-2 img, .offer-item-3 img {
+      width: 50%; /* Make the images fill the container */
+      height: auto; /*  Maintain aspect ratio */
+  }
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .step {
+      width: 50%;
+      float: left;
+    }
+  
+    .step-text {
+      width: 100%;
+    }
+  
+    .step-icon {
+      width: 30%;
+      height: 30%;
+      margin: 10px auto;
+      display: block;
+    }
+   
+    .fair-trade {
+      padding: 20px;
+    }
+  
+    .local-baked-goods {
+      padding: 20px;
+      
+    }
+  
+    .made-with-love {
+      padding: 20px;
+      margin: 0 auto;
+  
+    }
+   
+    .hero {
+      height: 60vh;
+      /* adjust the height to fit tablet size */
+      position: relative;
+      /* add relative positioning to hero container */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .background-image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(0.5);
+      position: absolute;
+      /* add absolute positioning to image */
+      top: 0;
+      left: 0;
+      z-index: -1;
+      /* send image to back layer */
+    }
+  
+    .content-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+      /* add relative positioning to content wrapper */
+      z-index: 1;
+      /* bring content wrapper to front layer */
+    }
+  
+    .content-1,
+    .content-2 {
+      width: 40%;
+      /* adjust the width to fit beside each other */
+      margin: 20px;
+      text-align: center;
+    }
+  
+    .content-1 h3,
+    .content-2 h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #fff;
+      /* add white text color to contrast with image */
+    }
+  
+    .content-1 h2,
+    .content-2 h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #fff;
+      /* add white text color to contrast with image */
+    }
+  
+    .content-1 button {
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #333;
+      background-color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .content-2 button {
+      padding: 10px 20px;
+      font-size: 18px;
+      color: white; /* change text color to black */
+      background-color: transparent; /* change background color to white */
+      border:#fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .hero {
+      height: 70vh;
+    }
+  
+    .content-wrapper {
+      flex-direction: row;
+    }
+  
+    .content-1,
+    .content-2 {
+      width: 45%;
+      margin: 15px;
+    }
+  
+    .content-1 h3,
+    .content-2 h3 {
+      font-size: 20px;
+    }
+  
+    .content-1 h2,
+    .content-2 h2 {
+      font-size: 30px;
+    }
+  
+    .content-1 button,
+    .content-2 button {
+      padding: 12px 25px;
+      font-size: 16px;
+    }
+  
+    .about-us {
+      max-width: 800px;
+      margin: 40px auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .about-us-image {
+      width: 50%;
+      height: 550px;
+      object-fit: cover;
+    }
+  
+    .about-us-content {
+      width: 50%;
+      padding: 40px;
+    }
+  
+    .about-us-content h3 {
+      font-size: 24px;
+    }
+  
+    .about-us-content h2 {
+      font-size: 36px;
+    }
+  
+    .about-us-content p {
+      font-size: 18px;
+    }
+  
+    .about-us-content button {
+      padding: 15px 30px;
+      font-size: 18px;
+    }
+  
+    .test {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .testimonial-1,
+    .testimonial-2,
+    .testimonial-3 {
+      width: 25%;
+      margin: 20px;
+    }
+  
+    .testimonial-1 img,
+    .testimonial-2 img,
+    .testimonial-3 img {
+      max-width: 100%;
+    }
+  
+    .testimonial-1 p,
+    .testimonial-2 p,
+    .testimonial-3 p {
+      font-size: 18px;
+      margin-bottom: 15px;
+      top: 15px;
+    }
+  
+    .testimonial-1 h3,
+    .testimonial-2 h3,
+    .testimonial-3 h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
